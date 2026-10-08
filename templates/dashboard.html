@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="text-white">Welcome, {{ user.name }}! 🌟</h1>
+            <p class="text-white-50">Let's find your perfect skin and hair care routine</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="glass-card text-center" onclick="window.location.href='{{ url_for('skin_assessment') }}'">
+                <div class="card-icon">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <h3 class="card-title">Skin Assessment</h3>
+                <p>Get personalized skincare recommendations based on your skin type and concerns</p>
+                <button class="btn btn-primary mt-3">Start Assessment →</button>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="glass-card text-center" onclick="window.location.href='{{ url_for('hair_assessment') }}'">
+                <div class="card-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3 class="card-title">Hair Assessment</h3>
+                <p>Discover your ideal hair care routine for healthy, beautiful hair</p>
+                <button class="btn btn-primary mt-3">Start Assessment →</button>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+    <div class="glass-card text-center" onclick="window.location.href='{{ url_for('general_care') }}'">
+        <div class="card-icon">
+            <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="card-title">General Care</h3>
+        <p>Holistic wellness tips, Ayurvedic practices, and natural remedies for overall health</p>
+        <button class="btn btn-primary mt-3">Explore Wellness →</button>
+    </div>
+</div>
+    </div>
+</div>
+{% endblock %}

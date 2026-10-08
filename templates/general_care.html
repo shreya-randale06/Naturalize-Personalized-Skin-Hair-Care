@@ -1,0 +1,454 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="text-white">🌿 Holistic Wellness Guide</h1>
+            <p class="text-white-50">Natural tips for overall health, beauty, and wellbeing</p>
+        </div>
+    </div>
+    
+    <!-- Nutrition & Diet -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="result-card">
+                <h3><i class="fas fa-apple-alt"></i> Ayurvedic Nutrition for Glowing Skin & Hair</h3>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="food-item">
+                            <i class="fas fa-carrot"></i>
+                            <strong>Eat These:</strong>
+                            <ul>
+                                <li>🥑 Amla (Indian Gooseberry) - Rich in Vitamin C</li>
+                                <li>🌰 Almonds & Walnuts - Omega-3 fatty acids</li>
+                                <li>🥬 Spinach & Leafy Greens - Iron & antioxidants</li>
+                                <li>🍯 Honey - Natural antibacterial</li>
+                                <li>🥥 Coconut - Healthy fats for moisture</li>
+                                <li>🌾 Whole Grains - B vitamins for energy</li>
+                                <li>🧄 Turmeric - Anti-inflammatory</li>
+                                <li>🍠 Sweet Potato - Vitamin A for skin health</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="food-item">
+                            <i class="fas fa-ban"></i>
+                            <strong>Avoid These:</strong>
+                            <ul>
+                                <li>🍕 Processed & Junk Food</li>
+                                <li>🍬 Excess Sugar & Sweets</li>
+                                <li>🥤 Carbonated Drinks</li>
+                                <li>🍟 Fried & Oily Food</li>
+                                <li>🌶️ Excessive Spicy Food</li>
+                                <li>🍺 Alcohol</li>
+                                <li>☕ Too Much Caffeine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Daily Wellness Routine -->
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+            <div class="wellness-card">
+                <i class="fas fa-sun fa-3x mb-3" style="color: #ff9800;"></i>
+                <h4>Morning Rituals</h4>
+                <ul>
+                    <li>🌅 Wake up before sunrise (Brahma Muhurta)</li>
+                    <li>💧 Drink warm water with lemon & honey</li>
+                    <li>🧘‍♀️ 10-15 minutes of meditation</li>
+                    <li>🕉️ Oil pulling with coconut oil (5 mins)</li>
+                    <li>🚿 Cold water splash on face</li>
+                    <li>🌿 Tongue scraping (Jihwa Prakshalana)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="wellness-card">
+                <i class="fas fa-hand-sparkles fa-3x mb-3" style="color: #4caf50;"></i>
+                <h4>Daily Practices</h4>
+                <ul>
+                    <li>💧 Drink 8-10 glasses of water</li>
+                    <li>🥗 Eat fresh, seasonal fruits & vegetables</li>
+                    <li>🚶‍♀️ 30 minutes of walking or exercise</li>
+                    <li>😴 Power nap (20 mins) if needed</li>
+                    <li>📵 Digital detox for 1 hour</li>
+                    <li>🌿 Herbal tea instead of caffeine</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="wellness-card">
+                <i class="fas fa-moon fa-3x mb-3" style="color: #2196f3;"></i>
+                <h4>Evening Rituals</h4>
+                <ul>
+                    <li>🌙 Dinner before 7 PM</li>
+                    <li>🛀 Warm bath with Epsom salts</li>
+                    <li>📖 Read instead of screen time</li>
+                    <li>💆‍♀️ Self-massage with warm oil (Abhyanga)</li>
+                    <li>🙏 Gratitude journaling</li>
+                    <li>😴 Sleep by 10 PM</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seasonal Care -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="result-card">
+                <h3><i class="fas fa-calendar-alt"></i> Seasonal Care (Ritucharya)</h3>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="season-card summer">
+                            <i class="fas fa-sun"></i>
+                            <h5>Summer (Grishma)</h5>
+                            <p>🌴 Stay hydrated</p>
+                            <p>🥒 Eat cooling foods</p>
+                            <p>🌿 Sandalwood paste</p>
+                            <p>💧 Coconut water</p>
+                            <p>🧴 Light moisturizers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="season-card monsoon">
+                            <i class="fas fa-cloud-rain"></i>
+                            <h5>Monsoon (Varsha)</h5>
+                            <p>☔ Boost immunity</p>
+                            <p>🍲 Light, warm foods</p>
+                            <p>🌿 Neem for skin</p>
+                            <p>🧴 Anti-fungal care</p>
+                            <p>💧 Herbal teas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="season-card autumn">
+                            <i class="fas fa-leaf"></i>
+                            <h5>Autumn (Sharad)</h5>
+                            <p>🍁 Detoxify body</p>
+                            <p>🌾 Whole grains</p>
+                            <p>🌿 Aloe vera gel</p>
+                            <p>💧 Hydrating masks</p>
+                            <p>🧴 Nourishing oils</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="season-card winter">
+                            <i class="fas fa-snowflake"></i>
+                            <h5>Winter (Hemant)</h5>
+                            <p>❄️ Warm oil massage</p>
+                            <p>🥘 Nourishing foods</p>
+                            <p>🌿 Heavy moisturizers</p>
+                            <p>💧 Ghee in diet</p>
+                            <p>🧣 Protect from cold</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home Remedies for Common Issues -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="result-card">
+                <h3><i class="fas fa-mortar-pestle"></i> Quick Home Remedies</h3>
+                <div class="remedies-grid">
+                    <div class="quick-remedy">
+                        <i class="fas fa-head-side-cough"></i>
+                        <h5>Cold & Cough</h5>
+                        <p>🍯 Honey + Ginger + Tulsi tea</p>
+                        <p>🌿 Steam with eucalyptus oil</p>
+                    </div>
+                    <div class="quick-remedy">
+                        <i class="fas fa-stomach"></i>
+                        <h5>Digestion Issues</h5>
+                        <p>🌿 Jeera water after meals</p>
+                        <p>🍋 Ginger + lemon tea</p>
+                        <p>🥄 Curd with lunch</p>
+                    </div>
+                    <div class="quick-remedy">
+                        <i class="fas fa-brain"></i>
+                        <h5>Stress & Anxiety</h5>
+                        <p>🧘‍♀️ Pranayama (deep breathing)</p>
+                        <p>🌿 Ashwagandha powder</p>
+                        <p>🎵 Meditation music</p>
+                    </div>
+                    <div class="quick-remedy">
+                        <i class="fas fa-eye"></i>
+                        <h5>Tired Eyes</h5>
+                        <p>🥒 Cucumber slices on eyes</p>
+                        <p>🌹 Rose water cotton pads</p>
+                        <p>💤 Adequate sleep</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Herbal Teas & Drinks -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="result-card">
+                <h3><i class="fas fa-mug-hot"></i> Ayurvedic Herbal Teas</h3>
+                <div class="tea-grid">
+                    <div class="tea-item">
+                        <h5>🌿 Tulsi Tea</h5>
+                        <p><strong>Benefits:</strong> Immunity booster, stress relief</p>
+                        <p><strong>How to make:</strong> Steep fresh tulsi leaves in hot water for 5 mins</p>
+                    </div>
+                    <div class="tea-item">
+                        <h5>🍃 Mint Tea</h5>
+                        <p><strong>Benefits:</strong> Digestion, freshness, cooling</p>
+                        <p><strong>How to make:</strong> Boil mint leaves with ginger, add honey</p>
+                    </div>
+                    <div class="tea-item">
+                        <h5>🟡 Turmeric Latte (Golden Milk)</h5>
+                        <p><strong>Benefits:</strong> Anti-inflammatory, glowing skin</p>
+                        <p><strong>How to make:</strong> Warm milk + turmeric + black pepper + honey</p>
+                    </div>
+                    <div class="tea-item">
+                        <h5>🍋 Ginger Lemon Tea</h5>
+                        <p><strong>Benefits:</strong> Digestion, immunity, detox</p>
+                        <p><strong>How to make:</strong> Boil ginger, add lemon juice and honey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sleep & Stress Management -->
+    <div class="row mb-5">
+        <div class="col-md-6 mb-4">
+            <div class="result-card">
+                <h3><i class="fas fa-bed"></i> Sleep Hygiene Tips</h3>
+                <ul>
+                    <li>😴 Maintain consistent sleep schedule (10 PM - 6 AM)</li>
+                    <li>📵 No screens 1 hour before bed</li>
+                    <li>🕯️ Dim lights in evening</li>
+                    <li>🌿 Use lavender or jasmine essential oil</li>
+                    <li>📖 Read a book instead of scrolling</li>
+                    <li>🛏️ Keep bedroom dark and cool</li>
+                    <li>🚫 Avoid heavy meals 2-3 hours before sleep</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="result-card">
+                <h3><i class="fas fa-heart"></i> Stress Management</h3>
+                <ul>
+                    <li>🧘‍♀️ Daily meditation (10-20 mins)</li>
+                    <li>🌿 Pranayama (Alternate nostril breathing)</li>
+                    <li>🚶‍♀️ Walk in nature</li>
+                    <li>📝 Journaling thoughts</li>
+                    <li>🎵 Listen to calming music</li>
+                    <li>💆‍♀️ Regular oil massage</li>
+                    <li>🤝 Connect with loved ones</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Exercise Recommendations -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="result-card">
+                <h3><i class="fas fa-running"></i> Exercise for Beauty & Wellness</h3>
+                <div class="exercise-grid">
+                    <div class="exercise-item">
+                        <i class="fas fa-spa"></i>
+                        <h5>Yoga Asanas</h5>
+                        <p>🧘 Surya Namaskar (Sun Salutation)</p>
+                        <p>🕉️ Sarvangasana (Shoulder Stand) - For glowing skin</p>
+                        <p>🐍 Bhujangasana (Cobra) - For back health</p>
+                        <p>🧘‍♀️ Shavasana (Corpse Pose) - For relaxation</p>
+                    </div>
+                    <div class="exercise-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <h5>Cardio & Strength</h5>
+                        <p>🏃‍♀️ 30 mins brisk walking daily</p>
+                        <p>🧘‍♂️ Surya Namaskar (10 rounds)</p>
+                        <p>🏋️‍♀️ Light weight training</p>
+                        <p>🚴 Cycling or swimming</p>
+                    </div>
+                    <div class="exercise-item">
+                        <i class="fas fa-lungs"></i>
+                        <h5>Pranayama (Breathing)</h5>
+                        <p>🌬️ Anulom Vilom (Alternate nostril)</p>
+                        <p>🔥 Kapalbhati (Skull shining)</p>
+                        <p>🐝 Bhramari (Humming bee)</p>
+                        <p>🌊 Ujjayi (Ocean breath)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DIY Beauty Products -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="result-card">
+                <h3><i class="fas fa-hand-sparkles"></i> DIY Natural Beauty Products</h3>
+                <div class="diy-grid">
+                    <div class="diy-product">
+                        <h5>🌹 Rose Water Toner</h5>
+                        <p><strong>Ingredients:</strong> Fresh rose petals, distilled water</p>
+                        <p><strong>How to make:</strong> Boil petals in water, steep overnight, strain, store in spray bottle</p>
+                        <p><strong>Uses:</strong> Toner, refresher, makeup setting spray</p>
+                    </div>
+                    <div class="diy-product">
+                        <h5>🥥 Whipped Body Butter</h5>
+                        <p><strong>Ingredients:</strong> Shea butter, coconut oil, almond oil</p>
+                        <p><strong>How to make:</strong> Melt and whip until fluffy</p>
+                        <p><strong>Uses:</strong> Deep moisturizer for dry skin</p>
+                    </div>
+                    <div class="diy-product">
+                        <h5>🍯 Honey & Oatmeal Scrub</h5>
+                        <p><strong>Ingredients:</strong> Oats, honey, yogurt</p>
+                        <p><strong>How to make:</strong> Grind oats, mix with honey and yogurt</p>
+                        <p><strong>Uses:</strong> Gentle exfoliation for face and body</p>
+                    </div>
+                    <div class="diy-product">
+                        <h5>🌿 Herbal Hair Oil</h5>
+                        <p><strong>Ingredients:</strong> Coconut oil, amla, brahmi, bhringraj</p>
+                        <p><strong>How to make:</strong> Heat oil with herbs, strain</p>
+                        <p><strong>Uses:</strong> Hair growth, strength, shine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-4">
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+</div>
+
+<style>
+.wellness-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.wellness-card:hover {
+    transform: translateY(-5px);
+}
+
+.wellness-card ul {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+.wellness-card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.food-item {
+    background: #f9f3e6;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.food-item strong {
+    color: #4caf50;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.food-item ul {
+    margin-bottom: 0;
+}
+
+.season-card {
+    background: linear-gradient(135deg, #fff9ef 0%, #fff5e6 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+}
+
+.season-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.season-card h5 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.season-card p {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+
+.summer i { color: #ff9800; }
+.monsoon i { color: #2196f3; }
+.autumn i { color: #ff5722; }
+.winter i { color: #00bcd4; }
+
+.quick-remedy {
+    background: #e8f5e9;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.quick-remedy i {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+}
+
+.tea-item, .diy-product {
+    background: #fff5e6;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.tea-item h5, .diy-product h5 {
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+}
+
+.exercise-item {
+    background: #f9f3e6;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.exercise-item i {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+}
+
+.remedies-grid, .tea-grid, .diy-grid, .exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+</style>
+{% endblock %}

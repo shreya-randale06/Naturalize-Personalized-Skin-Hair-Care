@@ -1,0 +1,27 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Flask-Bcrypt
+Flask-Migrate
+psycopg2-binary
+python-dotenv
+SQLAlchemy
+Werkzeug
+
+# For AI / ML (light integration later)
+scikit-learn
+pandas
+numpy
+
+# Optional but useful
+email-validator
+
+#openai
+python-dotenv
+google-genai
+google-generativeai
+
+requests
+beautifulsoup4
+selenium
+webdriver-manager

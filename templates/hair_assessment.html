@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container bg-hair">
+    <div class="form-glass">
+        <h2><i class="fas fa-cut"></i> Natural Haircare Assessment</h2>
+        <p class="text-center mb-4">Discover Ayurvedic remedies for your hair</p>
+        
+        <form method="POST" id="hairForm">
+            <div class="mb-3">
+                <label for="hair_type" class="form-label">Hair Type</label>
+                <select class="form-control" id="hair_type" name="hair_type" required>
+                    <option value="">Select your hair type</option>
+                    <option value="Straight">Straight - No natural curl pattern</option>
+                    <option value="Wavy">Wavy - Loose S-shaped waves</option>
+                    <option value="Curly">Curly - Defined curls or ringlets</option>
+                    <option value="Coily">Coily - Tight curls or zigzag pattern</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="hair_texture" class="form-label">Hair Texture (Optional)</label>
+                <select class="form-control" id="hair_texture" name="hair_texture">
+                    <option value="">Select texture</option>
+                    <option value="Fine">Fine - Thin strands, easily breakable</option>
+                    <option value="Medium">Medium - Average thickness</option>
+                    <option value="Thick">Thick - Coarse, dense strands</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="hair_length" class="form-label">Hair Length (Optional)</label>
+                <select class="form-control" id="hair_length" name="hair_length">
+                    <option value="">Select length</option>
+                    <option value="Short">Short - Above shoulders</option>
+                    <option value="Medium">Medium - Shoulder length</option>
+                    <option value="Long">Long - Below shoulders</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="concerns" class="form-label">Hair Concerns</label>
+                <textarea class="form-control" id="concerns" name="concerns" rows="4" 
+                          placeholder="Select all that apply: Hair fall, Dandruff, Dryness, Frizz, Split ends, Slow growth, Premature greying, Oily scalp, Damage from styling, Thin hair" 
+                          required></textarea>
+                <small class="text-white-50">Select your main concerns (separate with commas)</small>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-leaf"></i> Get Natural Remedies
+            </button>
+        </form>
+        
+        <div class="mt-4">
+            <div class="alert alert-success">
+                <i class="fas fa-mortar-pestle"></i>
+                <strong>Did You Know?</strong> Natural ingredients like Amla, Methi, and Coconut Oil have been used in India for centuries for healthy hair!
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Loading Spinner -->
+<div id="loadingSpinner" class="spinner-overlay">
+    <div class="spinner">
+        <i class="fas fa-spinner fa-3x"></i>
+        <p class="mt-3">Finding the perfect natural remedies for your hair...</p>
+        <small>Consulting ancient Ayurvedic wisdom</small>
+    </div>
+</div>
+
+<script>
+document.getElementById('hairForm').addEventListener('submit', function() {
+    document.getElementById('loadingSpinner').style.display = 'flex';
+});
+</script>
+{% endblock %}
